@@ -9,12 +9,14 @@ function App() {
   let [counter, setCounter] = useState(5)
 
   const add = () => {
-    if (counter >= 20) { setCounter(0); return; } 
-    setCounter(++counter)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
   }
 
   const sub = () => {
-    if (counter <= 0) { setCounter(0); return; }
     setCounter(--counter)
   }
   
